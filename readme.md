@@ -31,7 +31,7 @@ boiler-plate
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/js-30.git
+   git clone https://github.com/your-username/vanilla-js-boiler-plate.git
    ```
 2. Navigate to the project directory:
    ```sh
