@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,7 +10,82 @@
       href="./assets/images/favicon-32x32.png"
     />
 
+    <!-- Preload Fraunces font -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      as="style"
+    />
+
+    <!-- Preload Montserrat font -->
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      as="style"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Frontend Mentor | Product preview card component</title>
+    <meta
+      name="description"
+      content="Frontend Mentor | Product preview card component challenge. Build a product preview card component as closely as possible to the provided design."
+    />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <article class="product-card">
+        <picture class="product-card_image">
+          <source
+            srcset="./assets/images/image-product-mobile.jpg"
+            media="(max-width: 768px)"
+          />
+          <source
+            srcset="./assets/images/image-product-desktop.jpg"
+            media="(min-width: 768px)"
+          />
+          <img
+            src="./assets/images/image-product-desktop.jpg"
+            alt="Perfume Bottle"
+          />
+        </picture>
+        <div class="product-card_details">
+          <div class="product-card_details_category">PERFUME</div>
+          <h1 class="product-card_details_title">
+            Gabrielle Essence Eau De Parfum
+          </h1>
+          <p class="product-card_details_description">
+            A floral, solar and voluptuous interpretation composed by Olivier
+            Polge, Perfumer-Creator for the House of CHANEL.
+          </p>
+          <div class="product-card_details_price">
+            <div class="product-card_details_price-new">$149.99</div>
+            <div class="product-card_details_price-old">$169.99</div>
+          </div>
+          <button class="product-card_details_btn">
+            <img src="./assets/images/icon-cart.svg" alt="Cart Icon" />
+            <span class="product-card_details_btn_text">Add to Cart</span>
+          </button>
+        </div>
+      </article>
+    </main>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io/?ref=challenge" target="_blank">
+        Frontend Mentor
+      </a>
+      . Coded by
+      <a href="https://github.com/guptaujjwal1128" target="_blank">
+        Ujjwal Gupta
+      </a>
+      .
+    </footer>
+  </body>
 </html>
