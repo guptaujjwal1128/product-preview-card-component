@@ -12,11 +12,10 @@ module.exports = merge(common, {
       directory: path.resolve(__dirname, "dist"),
     },
     port: 3000,
-    open: false,
+    open: true,
     hot: true,
     compress: true,
     historyApiFallback: true,
     watchFiles: ["src/template.html"],
   },
-  plugins: [new BundleAnalyzerPlugin()],
 });
