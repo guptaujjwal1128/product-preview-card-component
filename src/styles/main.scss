@@ -94,6 +94,10 @@ footer.attribution {
   padding: 1rem;
   a {
     color: hsl(228, 45%, 44%);
+    &:hover,
+    &:focus {
+      color: hsl(228, 45%, 14%);
+    }
   }
 }
 
