@@ -1,5 +1,6 @@
-@use "./reset";
-@use "./variables" as *;
+@import "./variables";
+@import "./reset";
+
 html,
 body {
   display: flex;
