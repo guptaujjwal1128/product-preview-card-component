@@ -78,7 +78,8 @@ main {
         color: $white;
       }
     }
-    &_btn:hover {
+    &_btn:hover,
+    &_btn:focus {
       background-color: $darker-cyan;
       transition: background-color 250ms ease-in-out;
       appearance: none;
